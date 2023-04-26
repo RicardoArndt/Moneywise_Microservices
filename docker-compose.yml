@@ -1,0 +1,9 @@
+version: '3'
+services:
+  financial-service:
+    build:
+      context: ../Moneywise_Financial
+    image: financial-service
+    container_name: financial-service-container
+    ports:
+      - "3000:3000"
